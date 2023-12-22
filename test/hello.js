@@ -1,5 +1,4 @@
 const { expect } = require("chai");
-// const { createChallenge, submitLevel } = require("./utils");
 
 async function getChallenge() {
   const setupFactory = await ethers.getContractFactory(`contracts/hello/public/contracts/Setup.sol:Setup`);

@@ -1,4 +1,10 @@
+const dotenv = require("dotenv");
+
+dotenv.config(); // load env vars from .env
+
 require("@nomicfoundation/hardhat-toolbox");
+
+const { ARCHIVE_URL } = process.env;
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
@@ -14,7 +20,13 @@ module.exports = {
       { version: "0.8.23" }
     ],
   },
-  paths: {
-    sources: "./contracts",
+  networks: {
+    hardhat: {
+      forking: {
+        url: ARCHIVE_URL,
+        blockNumber: 11800000,
+      },
+      // accounts: [{privateKey: TESTING_ACCOUNT_PRIVATE_KEY, balance: ethers.parseEther('10000').toString()}],
+    },
   },
 };
