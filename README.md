@@ -1,13 +1,23 @@
-# Sample Hardhat Project
+# Paradigm-ctf 2021 Solutions
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+My solutions for [Paradigm CTF 2021](https://ctf.paradigm.xyz/).
 
-Try running some of the following tasks:
+Solved Challenges:
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+- [ ] Babycrypto
+- [ ] Babyrev
+- [ ] Babysandbox
+- [ ] Bank
+- [ ] Bouncer
+- [ ] Broker
+- [ ] Farmer
+- [ ] Hello
+- [ ] JOP
+- [ ] Lockbox
+- [ ] Market
+- [ ] Rever
+- [ ] Secure
+- [ ] Swap
+- [ ] Upgrade
+- [ ] Vault
+- [ ] Yield Aggregator
