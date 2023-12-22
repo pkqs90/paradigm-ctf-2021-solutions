@@ -2,5 +2,19 @@ require("@nomicfoundation/hardhat-toolbox");
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.19",
+  solidity: {
+    compilers: [
+      { version: "0.4.16" },
+      { version: "0.4.24" },
+      { version: "0.5.12" },
+      { version: "0.6.12" },
+      { version: "0.7.0" },
+      { version: "0.7.6" },
+      { version: "0.8.0" },
+      { version: "0.8.23" }
+    ],
+  },
+  paths: {
+    sources: "./contracts",
+  },
 };
