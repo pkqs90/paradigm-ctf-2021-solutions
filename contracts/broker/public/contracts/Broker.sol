@@ -1,5 +1,7 @@
 pragma solidity 0.8.0;
 
+import "hardhat/console.sol";
+
 interface IUniswapV2Pair {
     function mint(address to) external returns (uint liquidity);
     function getReserves() external view returns (uint112 _reserve0, uint112 _reserve1, uint32 _blockTimestampLast);
@@ -36,7 +38,8 @@ contract Broker {
 
     function rate() public view returns (uint256) {
         (uint112 _reserve0, uint112 _reserve1,) = pair.getReserves();
-        uint256 _rate = uint256(_reserve0 / _reserve1);
+        // Note: This rate is wrong - reserve0 is weth, reserve1 is token, should be _reserve1 / _reserve0.
+        uint256 _rate = uint256(_reserve1 / _reserve0);
         return _rate;
     }
 
