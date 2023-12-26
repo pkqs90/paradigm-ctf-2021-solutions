@@ -23,7 +23,6 @@ contract BabySandbox {
             
             // load calldata
             calldatacopy(0x00, 0x00, calldatasize())
-            
             // run using staticcall
             // if this fails, then the code is malicious because it tried to change state
             if iszero(staticcall(0x4000, address(), 0, calldatasize(), 0, 0)) {

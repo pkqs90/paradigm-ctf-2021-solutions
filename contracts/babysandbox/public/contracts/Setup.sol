@@ -1,6 +1,7 @@
 pragma solidity 0.7.0;
 
 import "./BabySandbox.sol";
+import "hardhat/console.sol";
 
 contract Setup {
     BabySandbox public sandbox;
