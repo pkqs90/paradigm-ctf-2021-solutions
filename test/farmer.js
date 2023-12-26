@@ -8,7 +8,7 @@ async function getChallenge() {
 }
 
 it("Solves Farmer", async function () {
-  const { setup, farmer, player } = await getChallenge();
+  const { setup, player } = await getChallenge();
 
   // This challenge sets up a farmer contract that consists of COMP tokens and performs a Comp -> WETH -> DAI trade.
   //
