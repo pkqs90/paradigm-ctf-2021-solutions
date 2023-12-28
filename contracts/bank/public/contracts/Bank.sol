@@ -1,5 +1,7 @@
 pragma solidity 0.4.24;
 
+import "hardhat/console.sol";
+
 contract ERC20Like {
     function transfer(address dst, uint qty) public returns (bool);
     function transferFrom(address src, address dst, uint qty) public returns (bool);
@@ -79,7 +81,7 @@ contract Bank {
                 accounts[msg.sender].length--;
             }
         }
-        
+
         // transfer the tokens out
         uint beforeBalance = ERC20Like(token).balanceOf(msg.sender);
         require(ERC20Like(token).transfer(msg.sender, amount), "withdrawToken/transfer-failed");

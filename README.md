@@ -7,7 +7,7 @@ Solved Challenges:
 - [ ] Babycrypto
 - [ ] Babyrev
 - [x] Babysandbox
-- [ ] Bank
+- [x] Bank
 - [x] Bouncer
 - [x] Broker
 - [x] Farmer
