@@ -6,18 +6,18 @@ Solved Challenges:
 
 - [ ] Babycrypto
 - [ ] Babyrev
-- [ ] Babysandbox
+- [x] Babysandbox
 - [ ] Bank
-- [ ] Bouncer
-- [ ] Broker
-- [ ] Farmer
-- [ ] Hello
+- [x] Bouncer
+- [x] Broker
+- [x] Farmer
+- [x] Hello
 - [ ] JOP
 - [ ] Lockbox
-- [ ] Market
+- [x] Market
 - [ ] Rever
-- [ ] Secure
+- [x] Secure
 - [ ] Swap
 - [ ] Upgrade
 - [ ] Vault
-- [ ] Yield Aggregator
+- [x] Yield Aggregator
