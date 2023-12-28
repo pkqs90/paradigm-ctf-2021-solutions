@@ -27,7 +27,7 @@ contract Setup {
             tokenCost += 5 ether;
         }
     }
-    
+
     function isSolved() external view returns (bool) {
         return address(market).balance == 0;
     }
